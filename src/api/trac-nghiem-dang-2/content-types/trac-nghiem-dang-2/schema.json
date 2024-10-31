@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trac_nghiem_dang_2s",
+  "info": {
+    "singularName": "trac-nghiem-dang-2",
+    "pluralName": "trac-nghiem-dang-2s",
+    "displayName": "Trắc Nghiệm Dạng 2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.options-2"
+    }
+  }
+}

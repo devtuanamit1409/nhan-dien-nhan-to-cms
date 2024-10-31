@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nhom_tinh_caches",
+  "info": {
+    "singularName": "nhom-tinh-cach",
+    "pluralName": "nhom-tinh-caches",
+    "displayName": "Nhóm Tính Cách",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type_tieng_viet": {
+      "type": "string"
+    },
+    "describe": {
+      "type": "text"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5video.CKEditor5Video"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

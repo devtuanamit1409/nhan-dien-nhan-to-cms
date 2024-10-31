@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_share_questions",
+  "info": {
+    "displayName": "questions",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "columns": {
+      "type": "integer"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.options"
+    }
+  }
+}

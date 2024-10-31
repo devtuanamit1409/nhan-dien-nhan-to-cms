@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_trac_nghiem_dang_2s",
+  "info": {
+    "singularName": "page-trac-nghiem-dang-2",
+    "pluralName": "page-trac-nghiem-dang-2s",
+    "displayName": "Page Trắc Nghiệm Dạng 2",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    },
+    "title": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5video.CKEditor5Video"
+    },
+    "questionsMain": {
+      "type": "string"
+    }
+  }
+}

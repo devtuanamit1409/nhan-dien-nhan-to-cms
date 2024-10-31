@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_share_options_2s",
+  "info": {
+    "displayName": "Options 2"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5video.CKEditor5Video"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "I",
+        "E",
+        "S",
+        "N",
+        "T",
+        "F",
+        "J",
+        "P"
+      ]
+    }
+  }
+}

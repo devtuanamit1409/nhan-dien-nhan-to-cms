@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_share_options",
+  "info": {
+    "displayName": "options",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "I",
+        "E",
+        "S",
+        "N",
+        "T",
+        "F",
+        "J",
+        "P"
+      ]
+    }
+  }
+}

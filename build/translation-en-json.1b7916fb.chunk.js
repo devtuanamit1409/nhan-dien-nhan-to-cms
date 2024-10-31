@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcms_nhan_dien_to_chuc=self.webpackChunkcms_nhan_dien_to_chuc||[]).push([[2955],{61922:s=>{s.exports=JSON.parse('{"customField.label":"Tags","customField.description":"Assign tags to entities"}')},58014:s=>{s.exports={}}}]);

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trac_nghiem_50_caus",
+  "info": {
+    "singularName": "trac-nghiem-50-cau",
+    "pluralName": "trac-nghiem-50-caus",
+    "displayName": "Trắc Nghiệm 50 Câu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "part": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.questions"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thong_tin_ung_viens",
+  "info": {
+    "singularName": "thong-tin-ung-vien",
+    "pluralName": "thong-tin-ung-viens",
+    "displayName": "Thông tin ứng viên",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-tags": {
+      "fieldName": "Tags",
+      "tags": {
+        "Chưa Đặt Lịch": { "color": "neutral" },
+        "Đã Phỏng Vấn": { "color": "success" },
+        "Chưa Phỏng Vấn": { "color": "primary" },
+        "Loại": { "color": "danger" }
+      },
+      "defaultTag": "Chưa Đặt Lịch"
+    }
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "string"
+    },
+    "postion": {
+      "type": "string"
+    },
+    "cv_ung_vien": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "Tags": {
+      "type": "customField",
+      "customField": "plugin::content-tags.content-tags"
+    }
+  }
+}
