@@ -24,7 +24,8 @@
     "strapi-plugin-content-tags": "^1.0.1",
     "strapi-plugin-excel-export-2024": "^1.0.7",
     "strapi-plugin-slugify": "^2.3.8",
-    "styled-components": "5.3.3"
+    "styled-components": "5.3.3",
+    "xlsx": "^0.18.5"
   },
   "author": {
     "name": "A Strapi developer"

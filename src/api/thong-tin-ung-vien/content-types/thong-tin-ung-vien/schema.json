@@ -14,10 +14,18 @@
     "content-tags": {
       "fieldName": "Tags",
       "tags": {
-        "Chưa Đặt Lịch": { "color": "neutral" },
-        "Đã Phỏng Vấn": { "color": "success" },
-        "Chưa Phỏng Vấn": { "color": "primary" },
-        "Loại": { "color": "danger" }
+        "Chưa Đặt Lịch": {
+          "color": "neutral"
+        },
+        "Đã Phỏng Vấn": {
+          "color": "success"
+        },
+        "Chưa Phỏng Vấn": {
+          "color": "primary"
+        },
+        "Loại": {
+          "color": "danger"
+        }
       },
       "defaultTag": "Chưa Đặt Lịch"
     }
@@ -44,14 +52,19 @@
     "birthDate": {
       "type": "string"
     },
-    "postion": {
+    "position": {
       "type": "string"
     },
     "cv_ung_vien": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "Tags": {
       "type": "customField",
