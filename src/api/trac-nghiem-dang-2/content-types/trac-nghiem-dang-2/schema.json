@@ -4,20 +4,35 @@
   "info": {
     "singularName": "trac-nghiem-dang-2",
     "pluralName": "trac-nghiem-dang-2s",
-    "displayName": "Trắc Nghiệm Dạng 2"
+    "displayName": "Trắc Nghiệm Dạng 2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "question": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "options": {
       "type": "component",
       "repeatable": true,
-      "component": "share.options-2"
+      "component": "share.options-2",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

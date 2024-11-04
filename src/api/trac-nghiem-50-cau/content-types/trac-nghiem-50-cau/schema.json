@@ -4,23 +4,43 @@
   "info": {
     "singularName": "trac-nghiem-50-cau",
     "pluralName": "trac-nghiem-50-caus",
-    "displayName": "Trắc Nghiệm 50 Câu"
+    "displayName": "Trắc Nghiệm 50 Câu",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "part": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "questions": {
       "type": "component",
       "repeatable": true,
-      "component": "share.questions"
+      "component": "share.questions",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

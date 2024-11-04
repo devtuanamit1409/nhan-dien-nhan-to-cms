@@ -1,17 +1,11 @@
 {
   "collectionName": "components_share_options_2s",
   "info": {
-    "displayName": "Options 2"
+    "displayName": "Options 2",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbarBaloon"
-      },
-      "customField": "plugin::ckeditor5video.CKEditor5Video"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -25,6 +19,13 @@
         "J",
         "P"
       ]
+    },
+    "label": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5video.CKEditor5Video"
     }
   }
 }
