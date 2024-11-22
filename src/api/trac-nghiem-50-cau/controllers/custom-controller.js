@@ -29,15 +29,23 @@ module.exports = {
     });
 
     // Chọn ra đặc điểm có tần suất cao nhất trong mỗi cặp
-    const result = [
-      frequency.E >= frequency.I ? "E" : "I",
-      frequency.S >= frequency.N ? "S" : "N",
-      frequency.T >= frequency.F ? "T" : "F",
-      frequency.J >= frequency.P ? "J" : "P",
-    ];
+    const result = {
+      E_I: frequency.E >= frequency.I ? "E" : "I",
+      N_S: frequency.N >= frequency.S ? "N" : "S",
+      T_F: frequency.T >= frequency.F ? "T" : "F",
+      P_J: frequency.P >= frequency.J ? "P" : "J",
+    };
+
+    // Sắp xếp lại các ký tự MBTI theo thứ tự yêu cầu
+    const mbti = [
+      result.E_I, // Ký tự thứ nhất: I hoặc E
+      result.N_S, // Ký tự thứ hai: N hoặc S
+      result.T_F, // Ký tự thứ ba: T hoặc F
+      result.P_J, // Ký tự thứ tư: P hoặc J
+    ].join("");
 
     // Trả về kết quả là một chuỗi MBTI
-    return { mbti: result.join("") };
+    return { mbti };
   },
   async getSimpleAnswerType(ctx) {
     const { answers } = ctx.request.body;
@@ -47,8 +55,25 @@ module.exports = {
       return ctx.badRequest("Invalid data: Must provide exactly 4 answers.");
     }
 
-    // Ghép 4 ký tự đáp án thành chuỗi MBTI
-    const mbti = answers.join("");
+    // Tạo một object để lưu trữ thứ tự đúng của các ký tự MBTI
+    const mbtiOrder = {
+      E: "I",
+      I: "I",
+      S: "S",
+      N: "N",
+      T: "T",
+      F: "F",
+      P: "P",
+      J: "J",
+    };
+
+    // Sắp xếp các ký tự MBTI theo đúng thứ tự
+    const mbti = [
+      answers.find((char) => char === "E" || char === "I") || "I", // Ký tự thứ nhất: I hoặc E
+      answers.find((char) => char === "N" || char === "S") || "S", // Ký tự thứ hai: N hoặc S
+      answers.find((char) => char === "T" || char === "F") || "T", // Ký tự thứ ba: T hoặc F
+      answers.find((char) => char === "P" || char === "J") || "J", // Ký tự thứ tư: P hoặc J
+    ].join("");
 
     // Trả về kết quả là một chuỗi MBTI
     return { mbti };
